@@ -41,3 +41,9 @@ Route::put('/kategori/update/{id}', [HomeController::class, 'kategori_update']);
 
 Route::post('/transaksi/aksi', [HomeController::class, 'transaksi_aksi']);
 Route::put('/transaksi/update/{id}',[HomeController::class, 'transaksi_update']);
+
+Route::get('/laporan/print', [HomeController::class, 'laporan_print']);
+Route::get('/laporan/excel', [HomeController::class, 'laporan_excel']);
+
+Route::get('/ganti_password', [HomeController::class, 'ganti_password']);
+Route::post('/ganti_password/aksi', [HomeController::class, 'ganti_password_aksi']);
